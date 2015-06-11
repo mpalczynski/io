@@ -1,0 +1,15 @@
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<title>Hello AngularJS</title>
+</head>
+<body>
+	<div th:fragment="content" ng-controller="CardController">
+		{{greeting}}
+		<form>
+			Word <input type="text" ng-model="card.word" /> <br />
+			<button ng-click="save(card)">Save</button>
+		</form>
+	</div>
+</body>
+</html>

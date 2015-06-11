@@ -1,0 +1,18 @@
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org" ng-app="polyglot">
+<head>
+	<!--/*  Each token will be replaced by their respective titles in the resulting page. */-->
+	<title layout:title-pattern="$DECORATOR_TITLE - $CONTENT_TITLE">Task List</title>
+	<script	src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+</head>
+<body>
+	<!--/* Standard layout can be mixed with Layout Dialect */-->
+
+	<div class="container">
+		<div th:replace="${view} :: content">Content</div>
+	</div>
+
+	<script src="resources/js/modules/polyglot.js"></script>
+	<script src="resources/js/controllers/card.js"></script>
+</body>
+</html>
